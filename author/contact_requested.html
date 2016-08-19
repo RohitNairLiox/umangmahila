@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Rohit Nair</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="gentleman.png">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="me.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Who">WHO</a></li>
+        <li><a href="#What">WHAT</a></li>
+        <li><a href="#Where">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center" id="Who">
+      <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 alert alert-success fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Contact Requested!</strong> Will get back to you soon.
+    </div>
+    </div>
+  <h3 class="margin">Who Am I?</h3>
+
+  <img src="me.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="350" height="350">
+  <h3>I'm an enthusiast</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="What">
+  <h3 class="margin">What Am I?</h3>
+  <p>A 20 year old computer ethusiast, who likes to work on stuffs that interests him. Aims at being a full-stack developer; has already done a wide variety of programming and likes to get his hands around in almost all new technology. <br><br> A self Learning. Sweet and simple guy. <br><br></p>
+  <a href="https://github.com/RohitNairLiox" target="_blank" class="btn btn-default btn-lg">
+    <i class="fa fa-github" aria-hidden="true" style="font-size:26px;"></i>
+  </a> 
+  <a href="https://www.facebook.com/puthenrohit" target="_blank" class="btn btn-default btn-lg">
+    <i class="fa fa-facebook-official" aria-hidden="true" style="font-size:26px;"></i>
+  </a> 
+  <a href="https://medium.com/@rohitnair_47580" target="_blank" class="btn btn-default btn-lg">
+    <i class="fa fa-medium" aria-hidden="true" style="font-size:26px;"></i>
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="Where">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>In the office</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <h4>Near the fountain</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <h4>At my home</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+	<h2>Get in touch</h2>
+ <div class="row"> 	
+    <div class="col-sm-5">
+      <p>Contact me. Usually gets back immediately.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Mumbai, IN</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 8149712865</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> puthenrohit@gmail.com</p>
+    </div>
+    <form method="post" action="php/requestcontact.php">
+  <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+  </div>
+  </form>
+</div>
+
+  <a href="#" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+</footer>
+
+</body>
+</html>
