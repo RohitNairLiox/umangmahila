@@ -17,15 +17,6 @@ $Message = $_POST["comments"];
 $sql = "INSERT INTO `contactrequested` (`Uid`, `Name`, `Email`, `Message`) VALUES (NULL, '$Name', '$EmailId', '$Message')";
 
 if ($conn->query($sql) === TRUE) {
-        $headers = "From: order@umangmahilatailors.org" . "\r\n" .
-      "CC: sarathvalia@gmail.com";
-     // the message
-       $msg = nl2br("Name: " . $Name . "\n Email ID: " . $EmailId . "\n Request Message: " . $Message);
-
-     // send email
-    mail("mail@umangmahilatailors.org","Contact Requested",$msg,$headers);
-
-      // redirect
 	header("Location:http://www.umangmahilatailors.org/contact_requested.html");
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
